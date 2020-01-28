@@ -167,7 +167,7 @@ a {
     padding: 20px;
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-row-gap: 30px;
+    grid-row-gap: 50px;
 }
 
 .step-desc .title {
@@ -369,6 +369,23 @@ a {
 
     100% {
         transform: scale(1, 0);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .work-process {
+    grid-template-columns:1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    grid-row-gap: 20px;
+    }
+
+    .step-num{
+        right: 76px;
+    }
+
+    .step-icon{
+        margin: auto;
     }
 }
 
